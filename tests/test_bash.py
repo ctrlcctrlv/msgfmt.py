@@ -1,11 +1,13 @@
 """Tests msgfmt against GNU bash's ja.po"""
 import os
-import pytest
-from tempfile import mkstemp
-from pathlib import Path
 from io import BytesIO
-from msgfmt import make
+from pathlib import Path
+from tempfile import mkstemp
+
+import pytest
 from fixtures import *
+
+from msgfmt import make
 
 
 def test_bash(script_loc, tmp_path):

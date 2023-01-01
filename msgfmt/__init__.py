@@ -26,14 +26,13 @@ Options:
         Display version information and exit.
 """
 
-import os
-import sys
+import array
 import ast
 import getopt
+import os
 import struct
-import array
-from email.parser import HeaderParser
 import sys
+from email.parser import HeaderParser
 
 if sys.version_info >= (3, 8):
     from importlib import metadata as importlib_metadata
